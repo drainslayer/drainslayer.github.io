@@ -1,0 +1,18 @@
+<!doctype html> 
+<html>
+<head>
+<Title> This is a random creation </title>
+</head>
+<Body>
+<form action="" method="">
+<input type=""text" name="" size"50">
+</form>
+<br>
+<br> 
+<form action=""method="">
+Hi my name is text box
+<textarea rows="20" cols="40"></textarea>
+<Input type="submit" value="Someone, please kill me">
+
+</body>
+</html>

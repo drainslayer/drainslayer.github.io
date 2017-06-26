@@ -1,0 +1,295 @@
+<	
+Begin with....
+
+1)Start with <!doctype html> all the time. This is to declare what document it is.
+2)Then wrap around our html document with <html> and closing with </html> 
+3) inside the <html>, there will be <head> </head> and <body> </body>
+
+
+Head breaks
+
+4) Inside <head></head> there will be a title. <title></title> is where what you can do to name the tabs of what you created.
+
+
+
+
+Body Breaks
+
+5) Inside <body></body>, there will be mutiple things you can add. The <body> is what you can display on the actual website.
+
+6) <h1> </h1> to <h6></h6> is the heading. The higher the number, the smaller the font. This acts as a big ass title for the website.
+
+7) <p> </p> is for paragraphs or to skip a line. 
+
+8)<br> are just skipping lines. Does not need to end with </br>. You can add multiple breaks and don't need to end.
+
+9) <!--   (Insert comment)     --> are invisible comments.
+
+10) to comment in the <br> or spaces, just type underneath that code.
+
+11) &nbsp is for a space between words or letters. Such as skip zero => skip    zero
+
+ 12) Unordered List 
+<ul>
+ <li> (List item) </li>
+</ul>
+These make lists that look like this: *CD
+			      *Magazine
+They skip lines after each <li>
+
+13) Ordered are <ol> </ol>. Same as unordered list, but with apropriate numbers.
+Such as: 1) CD
+              2) Magazine
+
+14) <table> </table> is for creating tables with apropriate lists.
+	1) First setup a column with <tr> </tr> 
+	2) <th> <th> is the heading of each column
+	3) <td> </td> is the data in each column under each heading.
+In the end, the code for table looks like this :
+		<table>
+		<tr>
+		<th> (insert column heading) <th>
+		<th> (insert column heading) <th>
+		</tr>
+		      <tr>
+		      <td> (Insert data in first column) </td>
+		      <td> (Insert data in second column) </td>
+		       </tr>
+		<tr>
+		<td> (1second row of first column) </td>
+		<td> (second row of second column) </td>
+		</tr>
+		</table> 
+
+15) To create or redirect to links: you need to start with a <p></p> or <br>
+   <a  href="(url of the link)">  (then type what you want the link name to be ) </a>     This will be a link imbedded in the text. 
+
+16) To create a link that moves the page to the certain spot. This doesn't change the url at all!!
+  Link:   Start with Unordered list and then create list elements.
+	<ul>
+		<li> 	<a href="#(where you want to move the page, such as a word)">(Same word or you want to move it)   </a>  </li>
+	</ul>
+			# is what connects to similar names and thus hyperlinks to move the page down
+			The result of clicking the first is another html cod
+   Result: <a name="(where you want to move the page, such as word)" </a> 
+
+17) Adding an image: You first need the image on the same folder as the html code
+	You need <br> or <p> </p> first.
+	<img src="(name of the image within same folder)">
+
+18) Resizing and sizing images: landscapes or big pictures should use jpeg. Small logos and smaller portraits should use .png or .gif
+	You simply alter the image html on top!
+So you change <Img src="(name of image)"> to <img src="(name of image)" width="(number)" height="(number)">
+
+
+
+
+
+
+
+
+
+	These will all be within the <body></body>   These all needed to begin with code <form action="" method="">
+19) To create a one-line text box you first need:
+	<form action="" method="">
+	and close with </form>
+	Inside of that input: <input type="text" name="" size"(how big you want it)">
+
+20) Inorder to create a label for  your text box... You need to modify the text box html.
+	So you first create <label for="(label to identify the html)">(Name of the text box):</label>
+	then alter the text box html to: <input type="text" id="label to identify the html)" name="">
+
+		Example: <label for="EDWARD">fuuuck my anus:</label>
+			<Input type="text" id="EDWARD" name="">
+	
+	This will create:      fuck my anus:____________________
+
+21) To increase the size of your text box: 
+	1) first input the original code for your text box: <form action="" method="">
+	2) then input the modification html for that text box: <textarea rows="(number of rows for textbox)" cols="(number of columns)"></textarea>
+
+	Example: <form action=""method="">
+		<textarea rows="10" cols="10"></textarea>              will create....
+			_____________
+			_____________
+			_____________
+If you want to label the text box you just put the name inbetween the two codes: 
+<form action=""method="">
+(Comment or label of text box)
+<textarea rows="10" cols="10"></textarea>    
+
+22) to create a submit button for your text box: you input the html for it which is..... <input type="submit" value="(text of button)">
+
+	Example: <form action=""method="">
+	(Comment or label of text box)</br>
+	<textarea rows="10" cols="10"></textarea></br>    
+	<Input type="submit" value="(Hi, click me)">
+will create.....			___________
+				___________	
+				___________	[submit]
+
+23) To create button where you can click on... Radio buttons bud..
+	<form action="" method="">
+	(label for the button) <input type=""radio" name="(random name to identify for buttons)" value=""> <br>
+	(label for second button) <input type>=""radio" name="(random name to identify for buttons)" value="">
+
+24) To create checkboxes... Such as boxes in which you can click multiple times: 
+	<form action="" method="">
+	<input type="checkbox" name=""> (name for check box) <br>
+	<input type="checkbox" name="">(name for second checkbox) <br>
+<br> is just for formatting or skipping a line down. Not totally necessary, but is useful to making it look legit.
+		Example: <form action="" method="">
+		What should I do with my life? <br>
+		<input type="checkbox" name=""> Kill yourself <br>
+		
+25) To create a textbox in which you can put a set number amount:
+<form action=""method="">
+<Input type"number" min="(smallest amount in number box)" max="(highest amount)">
+<</form>
+	
+26) To create a drop-down box... or a textbox with given answers:
+ 
+<form action=""method="">
+<select> 
+<option value="(answer)">(answerdisplayed)</option>
+</select>
+
+You can create as many <option value as you want.
+
+27) To create a textbox which registers a date:
+	<input type="date" name="day">
+	Number of days: <input type="number" name="numdays" min="(smallest number to input box)" max="(maximum days)">
+
+These are all the child of <form></form> not <form action
+ 
+Example: <form>
+		Enter day you want to travel to Cancun
+	<input type="date" name="day">
+	Number of days: <input type="number" name="numdays" min="1" max="10>
+	</form>
+		Will create....     Enter day you want to travel to Cancun [  /   /     ]
+					Number of Days:_____
+
+honestly, in this case where you register only <form></form>... You can also substitute it for <form action=""method="">
+
+28) Labeled textboxes are children of <form> and just <input type="text">
+
+29) To create a box for all your input elements such as radio buttons and text boxes:
+	put <fieldset></fieldset> inside <form>
+Example: <form>
+	<fieldset> 
+	<input type="radio"
+	</fieldset>
+	</form>
+
+30) To create a caption for <fieldset>:
+Use the <legend> for any text
+Example: <form>
+	<fieldset>
+	<legend> How to get girls> </legend>
+	<input type="text">
+	</fieldset>
+	</form>
+
+31) Attributes are always in the opening element
+elements or angle brackets are like <p> and <h1>
+Attribute examples: <p class="test"> (some words) </p>
+The class="test" is the attribute.
+
+Some attributes are different based on the elements. Such as <label> uses attribute for="name"
+
+
+
+
+
+
+
+32) Meta elements always go in the <head></head>
+		They are not visible to people who view your website
+	They are used for search engines to view your tags
+
+33) Description for your website that assists the search engine:
+	<meta name="description" content="(What ever content of the website)" />
+Maximum of 155 characters, this is what will be displayed on the search result.
+
+34) Keywords for website or meta elements... These are used for search engines to look for specific words to find your page..
+		<meta name="keywords" content="(simple words that may pop up in search engine)" />
+		
+35) To search name and authors for meta elements
+<meta http-equiv="author"content="(author name)" />
+
+36) meta elemnent for what language your website is in:
+	<meta http-equiv="content-language" content="(language type..en-us)" />
+
+37) To insert escape characters, such as coding characters that don't show up:
+Space= &nbsp
+tm= &#8482
+&=&amp
+@= &copy
+<=&lt
+>=&gt
+?=&#63
+
+38) To bold or italic words on displayed <body>:
+	You <b> whats on the paragraph or text
+For example: This is a <b> bolded word </b>.
+
+39) 
+<b></b>=bold
+<strong></strong>= darker than bold
+<i></i>= for italics
+<em></em>= for more italicer
+
+40) iframe element is just another html document. Inserts content from external pages like advertisement and music:
+
+41) iframe element: <iframe frameborder="(1 or 0") width="(any amount of pixels)" height="(any amount of pixels)" src="(file in the same folder)" name="(give any name to identify)" id="(same as src)"> (some text) </iframe> <br />
+	To connect it in same border:
+<a href="(name of second html)" target="(same as id on iframe)"> (then some text)</a>
+
+This iframe element is basically a document and when you click on (then some text), it changes to a second html document.
+1 means ON. 0 means OFF.
+All of these must be on the same folder.
+
+42) To create superscript and subscript element: Such as H20.. The 2 being a subscript.
+<sup></sup> is superscript
+<sub></sub> is subscript
+
+Example: H<sub>2</sub>0 will make the compound h20
+
+43) To make text when you hover over an image:
+	<img src="(image within the folder)" title="(the actual text") alt="(back up text)">
+
+44) To make audio files:
+	<body>
+	<audio controls="(any name to identify)
+"> 
+	<source src="(name of music file)" />
+	</audio>
+	</body>
+
+	Make multiple <source htmls just in case .mp3 file wont load.
+Standard formats are .mp3, .wav and .ogg.
+
+Example: <body>
+	<audio controls="(any name to identify)"> 
+	<source src="music.mp3" />
+	<source src="music.wav" />
+	</audio>
+	</body>
+
+45) To make a video file: Same as voice html
+	<video width="(how big pixels)" height="(how big pixels)" controls>
+		<source src="(same file in folder)" />
+		</video>
+
+	Standard video formats are .mp4, webm and op.gg
+
+Example: <body>
+	<video width="100" height="200" controls>
+	<source src="video.mp4" />
+	<source src="video.webm" />
+	</video>
+	</body>
+
+46)
+ <hr /> is a black line
