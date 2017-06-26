@@ -1,0 +1,78 @@
+<!doctype html>
+<html>
+<head>
+<title> Formaction
+</title>
+</head>
+<body> <img src="C:\Users\Edward\Desktop\website things\New folder\htmlthingy.png" width="400" height="200">
+<fieldset>
+<legend> &ltform action="" method=""&gt </legend>
+<h1> Context.. </h1> 
+<br> 
+
+<br> &ltform action="" method=""&gt will always be in &ltbody&gt &lt/body&gt. The input element is <b>always</b> the command and child of the &ltform&gt. <hr /> <h1> Index </h1> <ul> <li> <a href="#onetext">  One-line Text Box </a> </li>
+<li><a href="#labeltext"> How to label text boxes </a> </li> 
+<li><a href="#resizetext"> Resizing the text box </a> </li> 
+<li><a href="#stext"> Making a submit button for your text box </a> </li> <li><a href="#rbuttons"> Creating radio buttons </a> </li> 
+<li><a href="#check"> The check box you need to learn </a> </li>
+<li><a href="#numbox"> Creating a text box with set number amount </a> </li>
+<li><a href="#dropdown"> The drop-down box </a> </li>
+<br> <h3> Text Boxes </h3>
+<h5> Creating a one-line text box:<a name="onetext" </a> </h5>
+<br> <form action="" method="">
+<input type="text" name="" size"50">
+</form>
+<br> &ltbody&gt
+<br> &ltform action="" method=""&gt 
+<br> &ltinput type="text" name="" size"(how big you want the text box)">
+<br> &lt/form&gt <br> &lt/body&gt
+<br>
+<h5> Creating a label for the text box: <a name="labeltext" </a> </h5>
+<br> <label for="textboxer">Textbox XD:</label> <input type="text" id="textboxer" name="">
+<br> Inorder to create a label for your text box... You need to modify the text box HTML. 
+<br> So you first create &ltlabel for="(label that identifies the HTML)"&gt (put the name for textbox):&ltlabel&gt
+<br> Then, alter the text box html to &lt input type="text" id="(same label)" name="">
+<br> <br> In the end, it looks like this:
+<br> &ltlabel for="random"> label thingy:&lt/label&gt <br> &ltinput type="text" id="random" name=""&gt
+<h5> Increasing the size of your text box: <a name="resizetext" </a> </h5>
+<br> First, input the original code for your text box: &ltform action="" method=""&gt <br>
+<br> Next, put &ltbr&gt after it.
+2) Then, input the modification HTML for that text box: <br> &lttextarea rows="(number of rows you want)" cols="(number of columns you want)"&gt &lt/textarea&gt 
+<h6> Result: </h6> <br> &ltform action="" method=""&gt
+<br> &ltbr&gt <br> &lttextarea rows="(number of rows you want)" cols="(number of columns you want)"&gt &lt/textarea&gt <br> &lt/form&gt
+<br> <br>Example: <form action="" method="">
+<br> Hello: <br> 
+<textarea rows="10" cols="10"> </textarea> <br> </form> <br>
+<h5> Creating a submit button: <a name="stext" </a> </h5> 
+<br> To create a submit button, you add &ltinput type="submit" value="(what you want to name the button)"&gt
+<br> <b> Result: </b> <br> &ltform action="" method=""&gt <br>&ltbr&gt 
+<br> &lttextarea rows="(number of rows you want)" cols="(number of columns you want)"&gt &lt/textarea&gt <br> &ltinput type="submit" value="(what you want to name the button)"&gt <br> &lt/form&gt
+<br> Example: <br> <form action="" method=""> <br> <textarea rows="10" cols="10"></textarea> <input type="submit" value="Submit"> </form>
+<br> <hr /> <br> <h5> Radio buttons  <a name="rbuttons" </a></h5><br> 
+To create buttons where you can click on: <br>
+&ltbody&gt <br> &ltform action="" method=""&gt <br> (Label for first button) &ltinput type="radio" name="(random name ID)" value=""&gt <br> &ltbr&gt
+<br> (Label for second button) &ltinput type="radio" name="same name ID)" value=""&gt
+<br> &lt/form&gt <h6> Example: </h6> <br> <form aciton="" method=""> Is something wrong? <input type="radio" name="namer" value=""> <br> Something is wrong.
+<input type="radio" name="namer" value="">
+<hr />
+<br> <h5> Creating check boxes: <a name="check" </a> </h5> <br> To create a <b>checkbox</b>... Such as a format in which you can check multiple times: <br> <br>
+&ltform action="" method=""&gt<br>
+&ltinput type="checkbox" name="">(name for first checkbox) <br> &ltbr&gt <br> &ltinput type="checkbox" name="">(name for second checkbox) <br> &ltbr&gt <br> &lt/form&gt
+<br> <br> <b>Naming the checkbox is simply just labeling it before typing the HTML Code.</b> <br> <h6> Example: </h6>
+<br> <form action="" metjhod=""> <input type="checkbox" name=""> Zero <br> <input type="checkbox" name=""> One <br> <hr /> <br>
+<h5> To create a text box in which you can only put a set number amount <a name="numbox" </a></h5> <br>
+&ltform action="" method=""&gt <br> &ltinput type="number" min="(smallest amount)" max="(highest amount)"&gt <br> &lt/form&gt
+<br> <br> <h6> Example: </h6> <br> Try entering a number lower than 1 and higher than 10! <br>
+<form> <input type="number" min="1" max="10"> </form> <br> <hr />
+<h5> To create a drop-down box <a name="dropdown" </a>  </h5>
+<br> &ltform action="" method=""&gt <br> &ltselect&gt <br> &ltoption value="(answer)"&gt(answer displayed on the actual box)&lt/option&gt <br> &ltoption value="(answer2)"&gt(answer displayed on the actual box)&lt/option&gt
+<br> &lt/select&gt <br>&lt/form&gt
+<br> Example: <br> <form action="" method=""> <select> <option value="Yellow">Yellow</option> <option value="red">Red</option> </selection> </form> <br> You can add as many &ltoption value as you want to add more answers to the drop-down box. <br>  <hr />
+<br> <h5> A text box that only registers dates </h5> 
+<br> You can sometimes replace &ltform&gt with &ltform action="" method=""&gt
+
+</fieldset>
+
+
+</body>
+</html>
